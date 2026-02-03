@@ -1,0 +1,128 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 998;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #ffffff; 
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+  background: #ffffff; 
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+  background: #ffffff; 
+}
+
+.contentSidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100vh;
+  background: var(--collor-primary-navyBlack); /* Fundo escuro */
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.3);
+  padding: 80px 20px 20px;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.openBox {
+  right: 0;
+}
+
+.contentNav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navLink {
+  color: #ffffff; 
+  font-size: 1.1rem;
+  transition: color 0.2s;
+  text-decoration: none;
+  padding: 8px 0;
+  font-weight: 500;
+}
+
+.navLink:hover {
+  color: var(--collor-details-cyan);
+}
+
+.contactBtn {
+  margin-top: 30px;
+  padding: 12px 20px;
+  border: none;
+  background: var(--collor-details-cyan);
+  color: #000000; 
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.contactBtn:hover {
+  background: var(--collor-alternative--darkCyan2);
+  color: #000000; 
+}
+
+.contentSidebar::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7); 
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.openBox::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin-left: auto; 
+  }
+
+  .hamburger {
+    margin-right: 15px; 
+  }
+}

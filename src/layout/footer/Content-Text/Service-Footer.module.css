@@ -1,0 +1,85 @@
+.Box_Services_Footer {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.Title_Services_Footer {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--collor-secundary-white);
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.Title_Services_Footer::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--collor-details-cyan);
+  border-radius: 2px;
+}
+
+.Paragraf_Services_Footer {
+  color: rgba(237, 238, 239, 0.8);
+  line-height: 1.6;
+  font-size: 1rem;
+  max-width: 500px;
+}
+
+.List_iconsReds_Footer {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.Link_RedScl_Footer {
+  list-style: none;
+  transition: transform 0.3s ease;
+}
+
+.Link_RedScl_Footer:hover {
+  transform: translateY(-3px);
+}
+
+.Link_Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: rgba(20, 205, 221, 0.1);
+  border: 1px solid rgba(20, 205, 221, 0.3);
+  border-radius: 50%;
+  color: var(--collor-details-cyan);
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.Link_Footer:hover {
+  background: rgba(20, 205, 221, 0.2);
+  color: var(--collor-secundary-white);
+  box-shadow: 0 0 15px rgba(20, 205, 221, 0.4);
+}
+
+@media (max-width: 768px) {
+  .Box_Services_Footer {
+    min-width: 100%;
+  }
+  
+  .Title_Services_Footer {
+    font-size: 1.5rem;
+  }
+  
+  .Link_Footer {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,95 @@
+.boxTitle {
+  width: 100%;
+  padding: 4rem 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 90px 0px;
+}
+
+.boxTitle.noPaddingBottom {
+  padding-bottom: 1rem;
+}
+
+.dimensionTitle {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.TitleInform {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--collor-secundary-white);
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.TitleInform {
+  background: linear-gradient(135deg,
+      var(--collor-secundary-white) 0%,
+      var(--collor-details-cyan) 50%,
+      var(--collor-secundary-white) 100%);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.TitleInform.static {
+  background: none;
+  -webkit-text-fill-color: var(--collor-secundary-white);
+  ;
+  color: var(--collor-secundary-white);
+  ;
+}
+
+@media (max-width: 768px) {
+  .boxTitle {
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  .TitleInform::after {
+    width: 60px;
+    height: 3px;
+    bottom: -10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .boxTitle {
+    padding: 2.5rem 1rem 1.5rem;
+  }
+
+  .TitleInform::after {
+    width: 50px;
+    bottom: -8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .TitleInform {
+    animation: none;
+    background: none;
+    -webkit-text-fill-color: var(--collor-secundary-white);
+    color: var(--collor-secundary-white);
+  }
+}

@@ -1,0 +1,17 @@
+.imgLogo {
+  width: 170px;
+  height: 25px;
+  z-index: 999;
+}
+
+.logo_Text {
+  color: var(--collor-secundary-white);
+  font-style: oblique;
+  font-size: 1.8rem;
+}
+
+.span_Text {
+  color: var(--collor-details-cyan);
+  font-style: oblique;
+  font-size: 1.8rem;
+}

@@ -1,0 +1,48 @@
+.Button {
+    width: 200px;
+    display: flex;
+    justify-content: end;
+
+    .content_Btn {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+.linkButton {
+    z-index: 999;
+}
+
+.BtnHeader {
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--collor-secundary-white);
+    color: var(--collor-primary-navyblue);
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.BtnHeader:hover {
+    background-color: var(--collor-details-cyan);
+    color: var(--color-background);
+}
+
+
+.chat_Button {
+    background-color: transparent;
+    border: none;
+
+    .iconChat {
+        color: var(--collor-secundary-white);
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all .5s ease;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+}
