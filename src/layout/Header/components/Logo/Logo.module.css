@@ -1,17 +1,28 @@
-.imgLogo {
-  width: 170px;
-  height: 25px;
-  z-index: 999;
+.boxLogo {
+  width: 210px;
+  display: flex;
+  align-items: center;
 }
 
 .logo_Text {
-  color: var(--collor-secundary-white);
-  font-style: oblique;
-  font-size: 1.8rem;
+  color: var(--collor-primary-black);
+  font-style: italic;
+
+  &.logo_Text::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: var(--collor-blue);
+  }
+
 }
 
-.span_Text {
-  color: var(--collor-details-cyan);
-  font-style: oblique;
-  font-size: 1.8rem;
+
+.alternativCollor {
+  color: var(--collor-blue);
+  font-style: italic;
 }

@@ -19,13 +19,13 @@
 }
 
 .link {
-  color: var(--collor-white);
+  color: var(--collor-primary-black);
   text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 1rem;
   padding: 0.5rem 1rem;
   display: inline-block;
   transition: color 0.3s ease;
+  font-family: sans-serif;
 }
 
 .link:hover {
@@ -65,7 +65,7 @@
   visibility: hidden;
   transform: translateY(-10px);
   transition: all 0.3s ease;
-  z-index: 1000;
+  z-index: 1020;
 }
 
 .hasDropdown:hover .dropdownMenu {

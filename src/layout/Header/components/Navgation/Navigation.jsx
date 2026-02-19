@@ -6,15 +6,11 @@ import { IoIosArrowDown } from "react-icons/io";
 export default function Navigation({ isOpen, onClose }) {
   const dt_links = [
     {
-      label: "Inicio",
-      href: "/"
-    },
-    {
       label: "Quem Somos",
       href: "/#quem-somos"
     },
     {
-      label: "Serviços",
+      label: "Soluções",
       href: "/#cards-services",
       dropdown: [
         { label: "Landing Page - Empresarial", href: "/service" },
@@ -24,16 +20,11 @@ export default function Navigation({ isOpen, onClose }) {
       ],
     },
     {
-      label: "Tecnologias",
+      label: "Sistemas Desenvolvidos",
       href: "/#cards-services",
-      dropdown: [
-        { label: "Next.js", href: "/tech" },
-        { label: "WoordPress", href: "/tech" },
-        { label: "Sistemas de Gestão", href: "/tech" },
-      ],
-    },
+      },
     {
-      label: "Solução",
+      label: "Comunidade",
       href: "/#quem-somos"
     },
   ];

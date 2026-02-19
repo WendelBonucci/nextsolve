@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 
 import Logo from "./components/Logo/Logo";
 import Navgation from "./components/Navgation/Navigation";
-import Button from "./components/Button/Button";
+import Button from "./components/Buttons/Button";
 import Sidebar from "./components/SideBar/SideBar";
 
 
@@ -13,7 +13,6 @@ export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Definir estado inicial sem causar hidratação mismatch
     setIsMobile(window.innerWidth < 768);
   }, []);
 
@@ -21,7 +20,6 @@ export default function Header() {
     let scrollTimeout;
 
     const handleScroll = () => {
-      // Debounce para melhor performance
       if (scrollTimeout) clearTimeout(scrollTimeout);
       scrollTimeout = setTimeout(() => {
         setScrolled(window.scrollY > 20);
@@ -48,11 +46,11 @@ export default function Header() {
         <div className="section_global">
           <div className={styles.content_Header}>
             <Logo />
+            <Navgation />
 
             <nav className={styles.division_Content} aria-label="Navegação principal">
               {!isMobile && (
                 <>
-                  <Navgation />
                   <Button />
                 </>
               )}

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 
 * {
   padding: 0%;
@@ -8,21 +7,27 @@
   scrollbar-width: none;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   text-decoration: none;
   max-width: 100%;
+
 }
 
 :root {
   --collor-primary-black: #0D0D0D;
   --collor-gray: #8C8C8C;
   --collor-white: #fdfdfd;
-  --collor-blue: #79C4F2;
+  --collor-blue: #1b308d;
   --collor-grandient-gray: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   --collor-grandient-black: linear-gradient(135deg, #0a0a0a 0%, #363636 100%);
   --collor-grandient-blue: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
   --collor-grandient-red: linear-gradient(135deg, #faf9f9 0%, #f0efef 100%);
+
+
+  --font-primary-poppins: ;
+  --font-primary-Orbitron: ;
+  --font-primary-moteserrat: font-family: "Montserrat", sans-serif;
 }
 
 .color_cyan {
