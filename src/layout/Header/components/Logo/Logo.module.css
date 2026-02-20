@@ -5,7 +5,7 @@
 }
 
 .logo_Text {
-  color: var(--collor-primary-black);
+  color: var(--collor-white);
   font-style: italic;
 
   &.logo_Text::before {

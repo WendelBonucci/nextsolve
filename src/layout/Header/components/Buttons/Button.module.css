@@ -18,7 +18,7 @@
     position: relative;
     padding: 8px;
     border-radius: 10px;
-    color: var(--collor-primary-black);
+    color: var(--collor-white);
     transition: 0.4s;
 }   
 

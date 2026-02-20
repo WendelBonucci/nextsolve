@@ -18,39 +18,13 @@
   --collor-primary-black: #0D0D0D;
   --collor-gray: #8C8C8C;
   --collor-white: #fdfdfd;
-  --collor-blue: #1b308d;
+  --collor-blue: #79C4F2;
   --collor-grandient-gray: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   --collor-grandient-black: linear-gradient(135deg, #0a0a0a 0%, #363636 100%);
   --collor-grandient-blue: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
-  --collor-grandient-red: linear-gradient(135deg, #faf9f9 0%, #f0efef 100%);
-
-
-  --font-primary-poppins: ;
-  --font-primary-Orbitron: ;
-  --font-primary-moteserrat: font-family: "Montserrat", sans-serif;
-}
-
-.color_cyan {
-  color: var(--collor-details-cyan);
-  font-weight: 500;
-}
-
-.section_global {
-  max-width: 1980px;
-  margin: 0 auto;
-  padding: 15px 4%;
+  --collor-grandient-red:  linear-gradient(135deg, #faf9f9 0%, #f0efef 100%);
 }
 
 body {
-  background-color: var(--color-background);
   max-width: 100%;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-text-fill-color: #f0f0f0;
-  transition: background-color 5000s ease-in-out 0s;
-  border: 1px solid #ffffff33;
 }

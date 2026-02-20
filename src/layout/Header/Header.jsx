@@ -43,7 +43,6 @@ export default function Header() {
   return (
     <>
       <header className={`${styles.Header} ${scrolled ? styles.HeaderScrolled : ""}`} role="banner">
-        <div className="section_global">
           <div className={styles.content_Header}>
             <Logo />
             <Navgation />
@@ -58,7 +57,6 @@ export default function Header() {
 
             {isMobile && <Sidebar />}
           </div>
-        </div>
       </header>
     </>
   );
