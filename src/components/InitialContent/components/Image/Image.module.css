@@ -1,0 +1,103 @@
+.sectionWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionWrapper::before {
+    content: '';
+    position: absolute;
+    width: 85%;
+    height: 70%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(121, 196, 242, 0.13) 0%, transparent 70%);
+    filter: blur(56px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.boxImage {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 640px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:
+        0 0 0 1px rgba(121, 196, 242, 0.12),
+        0 32px 80px rgba(0, 0, 0, 0.55),
+        0 8px 24px rgba(121, 196, 242, 0.07);
+    padding-bottom: 48px !important;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px 20px 0 0;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.carousel:hover .image {
+    transform: scale(1.02);
+}
+
+.boxImage :global(.swiper-pagination) {
+    bottom: 14px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.boxImage :global(.swiper-pagination-bullet) {
+    width: 28px !important;
+    height: 3px !important;
+    border-radius: 100px !important;
+    background: rgba(140, 140, 140, 0.4) !important;
+    opacity: 1 !important;
+    margin: 0 !important;
+    transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+        background 0.35s ease;
+}
+
+.boxImage :global(.swiper-pagination-bullet-active) {
+    width: 52px !important;
+    background: var(--collor-blue, #79C4F2) !important;
+    box-shadow: 0 0 10px rgba(121, 196, 242, 0.5);
+}
+
+.boxImage :global(.swiper-button-next),
+.boxImage :global(.swiper-button-prev) {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .boxImage {
+        max-width: 100%;
+        border-radius: 16px;
+        padding-bottom: 44px !important;
+    }
+
+    .image {
+        border-radius: 16px 16px 0 0;
+    }
+
+    .boxImage :global(.swiper-pagination-bullet) {
+        width: 20px !important;
+    }
+
+    .boxImage :global(.swiper-pagination-bullet-active) {
+        width: 40px !important;
+    }
+}

@@ -1,5 +1,6 @@
 .Footer {
-  background-color: var(--collor-primary-navyBlack);
+  background-color: var(--collor-primary-black);
+  height: 60vh;
   border-top: 1px solid rgba(20, 205, 221, 0.2);
   padding: 60px 4% 30px;
   display: flex;

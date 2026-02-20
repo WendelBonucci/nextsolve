@@ -5,7 +5,7 @@ import styles from "./Header.module.css";
 import Logo from "./components/Logo/Logo";
 import Navgation from "./components/Navgation/Navigation";
 import Button from "./components/Buttons/Button";
-import Sidebar from "./components/SideBar/SideBar";
+/* import Sidebar from "./components/SideBar/SideBar"; */
 
 
 export default function Header() {
@@ -55,7 +55,7 @@ export default function Header() {
               )}
             </nav>
 
-            {isMobile && <Sidebar />}
+         {/*    {isMobile && <Sidebar />} */}
           </div>
       </header>
     </>

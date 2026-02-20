@@ -54,115 +54,11 @@
   z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 48px;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 100px 64px;
-}
-
-.boxImage {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-
-  animation: fadeLeft 0.9s 0.1s cubic-bezier(0.16, 1, 0.3, 1) both;
-}
-
-.boxImage::before {
-  content: '';
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(121, 196, 242, 0.14) 0%, transparent 70%);
-  filter: blur(48px);
-  z-index: 0;
-}
-
-.image {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 16px;
-  object-fit: cover;
-  box-shadow:
-    0 0 0 1px rgba(121, 196, 242, 0.12),
-    0 32px 80px rgba(0, 0, 0, 0.5),
-    0 8px 24px rgba(121, 196, 242, 0.08);
-
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.image:hover {
-  transform: translateY(-6px);
-  box-shadow:
-    0 0 0 1px rgba(121, 196, 242, 0.2),
-    0 40px 100px rgba(0, 0, 0, 0.5),
-    0 12px 40px rgba(121, 196, 242, 0.15);
-}
-
-.boxDescription {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  animation: fadeRight 0.9s 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
-}
-
-.titleInitial {
-  font-family: 'Syne', sans-serif;
-  font-weight: 800;
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  line-height: 1.1;
-  letter-spacing: -0.03em;
-  color: var(--collor-white);
-  margin-bottom: 20px;
-  background: linear-gradient(135deg,
-      var(--collor-white) 0%,
-      #c3cfe2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.textIntial {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.75;
-  color: var(--collor-gray);
-  margin-bottom: 36px;
-  max-width: 480px;
-}
-
-.link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--collor-blue);
-  text-decoration: none;
-  letter-spacing: 0.01em;
-
-  border-bottom: 1px solid rgba(121, 196, 242, 0.3);
-  padding-bottom: 2px;
-  width: fit-content;
-
-  transition: color 0.2s, border-color 0.2s, gap 0.2s;
-}
-
-.link:hover {
-  color: var(--collor-white);
-  border-color: rgba(253, 253, 253, 0.4);
-  gap: 14px;
 }
 
 @keyframes fadeLeft {

@@ -2,13 +2,8 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import styles from "./SideBar.module.css";
-import ChatWidget from "@/components/ChatBot/ChatWidget";
 
 export default function Sidebar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isChatOpen, setIsChatOpen] = useState(false);
-
-  const toggleChat = () => setIsChatOpen((prev) => !prev);
 
   const links = [
     { href: "/", label: "Início" },

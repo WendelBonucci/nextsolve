@@ -1,12 +1,12 @@
-import styles from "./home.module.css";
-import Carousel from "@/components/InitialContent/InitialContent";
+import styles from "./page.module.css";
+import InitialContent from "@/components/InitialContent/InitialContent";
+import About from "@/components/About/About";
 
 export default function Home() {
   return (
-    <>
     <div className={styles.page}>
-      <Carousel />
+      <InitialContent />
+      <About />
     </div>
-    </>
   );
 }
