@@ -10,9 +10,9 @@ import 'swiper/css/pagination'
 
 export default function ImageSlider() {
     const dt_image = [
-        { id: 1, image: '/initial01.png', alt: 'Image-Slider-01' },
-        { id: 2, image: '/initial01.png', alt: 'Image-Slider-02' },
-        { id: 3, image: '/initial01.png', alt: 'Image-Slider-03' },
+        { id: 1, image: '/slide-01.png', alt: 'Image-Slider-01' },
+        { id: 2, image: '/slide-03.png', alt: 'Image-Slider-02' },
+        { id: 3, image: '/slide-02.png', alt: 'Image-Slider-03' },
     ]
 
     return (

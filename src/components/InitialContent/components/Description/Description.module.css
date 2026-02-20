@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     gap: 0;
-    animation: fadeRight 0.9s 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .titleInitial {
@@ -54,4 +53,17 @@
     color: var(--collor-white);
     border-color: rgba(253, 253, 253, 0.4);
     gap: 14px;
+}
+
+@media (max-width: 768px) {
+    .boxDescription {
+        width: 100%;
+        height: auto;
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
 }
