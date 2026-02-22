@@ -1,5 +1,4 @@
 "use client";
-import useAOS from "@/utils/useAOS";
 import styles from "./Description.module.css";
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -12,7 +11,6 @@ import { GiSuitcase } from "react-icons/gi";
 import { PiShareNetworkLight } from "react-icons/pi";
 
 export default function Description() {
-  useAOS()
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => { 

@@ -1,8 +1,8 @@
 "use client"
 import { useEffect } from 'react'
 import styles from './About.module.css'
-import Image from './components/ImageIlustrative/Image'
-import Description from './components/Description/Description'
+import Image from './components/Image-IlustrativeAbout/Image'
+import Description from './components/Description-About/Description'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 

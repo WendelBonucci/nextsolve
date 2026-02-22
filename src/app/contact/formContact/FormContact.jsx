@@ -4,11 +4,8 @@ import styles from "./FormContact.module.css";
 import emailjs from "@emailjs/browser";
 import Loading from "@/utils/loading/Loading";
 import ImageContact from "../imageContact/ImageContact";
-import useAOS from "@/utils/useAOS";
 
 export default function FormContact() {
-  useAOS()
-
   const form = useRef();
   const [formData, setFormData] = useState({
     user_name: "",

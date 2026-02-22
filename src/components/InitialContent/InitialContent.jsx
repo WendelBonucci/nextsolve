@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 import styles from "./InitialContent.module.css";
 
-import ImageSlider from "./components/Image/Image";
-import Description from "./components/Description/Description";
+import ImageSlider from "./components/Image-InitialContent/Image";
+import Description from "./components/Description-InitialContent/Description";
 
 export default function InitialContent() {
   const [isMobile, setIsMobile] = useState(false);

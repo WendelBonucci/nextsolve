@@ -1,0 +1,27 @@
+.secImage {
+    display: flex;
+    align-items: center;
+}
+
+.boxImg {
+    width: 1290px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 1px solid rgba(121, 196, 242, 0.18);
+    background: rgba(121, 196, 242, 0.08);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.404);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+    &.boxImg:hover {
+        transform: translateY(-3px);
+        box-shadow: 2px 4px 6px rgba(51, 94, 235, 0.404);
+    }
+}
+
+
+.Image {
+    width: 100%;
+    height: 100%;
+}
