@@ -22,7 +22,7 @@ export default function ImageAbout() {
         <Image
           width={1200}
           height={600}
-          src='/nextslide.png'
+          src='/slideNextSolve.png'
           alt='image-content'
           className={styles.Image}
         />
