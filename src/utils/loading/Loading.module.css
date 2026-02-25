@@ -1,14 +1,23 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D0D0D;
+}
+
 .loadingIcon {
     animation: rotate 1s linear infinite;
-    font-size: 2rem;
-    margin: auto;
-    color: #ffffff
+    font-size: 2.5rem;
+    color: #ffffff;
 }
-@keyframes rotate{
-    0% {
+
+@keyframes rotate {
+    from {
         transform: rotate(0deg);
     }
-    100% {
+
+    to {
         transform: rotate(360deg);
-    }   
+    }
 }
