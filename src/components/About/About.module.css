@@ -17,10 +17,10 @@
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(ellipse 65% 50% at 0% 10%, rgba(121, 196, 242, 0.14) 0%, transparent 60%),
-        radial-gradient(ellipse 55% 45% at 100% 80%, rgba(121, 196, 242, 0.08) 0%, transparent 55%),
-        radial-gradient(ellipse 70% 35% at 50% 0%, rgba(195, 207, 226, 0.05) 0%, transparent 60%),
-        linear-gradient(175deg, #0a0a0a 0%, #111520 55%, #0d0d0d 100%);
+        radial-gradient(ellipse 65% 50% at 0% 10%, rgba(44, 66, 80, 0.14) 0%, transparent 60%),
+        radial-gradient(ellipse 55% 45% at 100% 80%, rgba(26, 51, 66, 0.08) 0%, transparent 55%),
+        radial-gradient(ellipse 70% 35% at 50% 0%, rgba(16, 21, 29, 0.05) 0%, transparent 60%),
+        linear-gradient(175deg, #0a0a0a 0%, #111520 55%, #000000 100%);
     z-index: 0;
     pointer-events: none;
 }
