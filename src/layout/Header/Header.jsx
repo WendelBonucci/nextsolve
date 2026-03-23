@@ -5,12 +5,13 @@ import styles from "./Header.module.css";
 import Logo from "./components/Logo/Logo";
 import Navgation from "./components/Navgation/Navigation";
 import Button from "./components/Buttons/Button";
-/* import Sidebar from "./components/SideBar/SideBar"; */
+import Sidebar from "./components/SideBar/SideBar";
 
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     setIsMobile(window.innerWidth < 768);
@@ -43,20 +44,16 @@ export default function Header() {
   return (
     <>
       <header className={`${styles.Header} ${scrolled ? styles.HeaderScrolled : ""}`} role="banner">
-          <div className={styles.content_Header}>
-            <Logo />
-            <Navgation />
+        <div className={styles.content_Header}>
+          <Logo />
+          <Navgation />
 
-            <nav className={styles.division_Content} aria-label="Navegação principal">
-              {!isMobile && (
-                <>
-                  <Button />
-                </>
-              )}
-            </nav>
+          <nav className={styles.division_Content} aria-label="Navegação principal">
+            <Button />
+          </nav>
 
-         {/*    {isMobile && <Sidebar />} */}
-          </div>
+        {/*   {isMobile && <Sidebar />} */}
+        </div>
       </header>
     </>
   );

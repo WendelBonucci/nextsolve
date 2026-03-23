@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
-import styles from "./SideBar.module.css";
 
 export default function Sidebar() {
 
@@ -16,10 +15,10 @@ export default function Sidebar() {
   const closeMenu = useCallback(() => setIsOpen(false), []);
 
   // Fechar menu ao clicar fora 
-  useEffect (() => {
+  useEffect(() => {
     const handleClickOutside = (e) => {
-      if (isOpen && !e.target.closest(`.${styles.contentSidebar}`) && 
-          !e.target.closest(`.${styles.hamburger}`)) {
+      if (isOpen && !e.target.closest(`.${styles.contentSidebar}`) &&
+        !e.target.closest(`.${styles.hamburger}`)) {
         closeMenu();
       }
     };
@@ -30,9 +29,9 @@ export default function Sidebar() {
 
   return (
     <div className={styles.wrapper}>
-      <button 
-        className={`${styles.hamburger} ${isOpen ? styles.active : ""}`} 
-        onClick={toggleMenu} 
+      <button
+        className={`${styles.hamburger} ${isOpen ? styles.active : ""}`}
+        onClick={toggleMenu}
         type="button"
         aria-label="Menu"
       >
@@ -66,7 +65,7 @@ export default function Sidebar() {
           </Link>
         </nav>
       </aside>
-      <ChatWidget isOpen={isChatOpen} onClose={toggleChat} />
+
     </div>
   );
 }
