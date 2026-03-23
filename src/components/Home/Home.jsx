@@ -2,8 +2,10 @@
 import { useState, useEffect } from "react";
 import InitialContent from "@/components/InitialContent/InitialContent";
 import About from "@/components/About/About";
-import Loading from "@/utils/loading/Loading";
+import System from "../System/System";
 
+
+import Loading from "@/utils/loading/Loading";
 export default function Home() {
     const [loading, setLoading] = useState(true);
 
@@ -28,6 +30,7 @@ export default function Home() {
         <section>
             <InitialContent />
             <About />
+            <System />
         </section>
     )
 }
