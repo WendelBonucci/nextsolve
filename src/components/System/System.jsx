@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './System.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export default function System() {
+    useEffect(() => {
+        Aos.init({
+            duration: 700,
+            once: true,
+            easing: 'ease-in-out'
+        })
+    })
+
     const systems = [
         {
             image: '/koriv.jpeg',
@@ -30,12 +40,25 @@ export default function System() {
 
     return (
         <section className={styles.System}>
-            <h1 className={styles.titleSystem}>Nossos Sistemas</h1>
-            <p className={styles.descriptionSystem}>Abaixo, conheça alguns dos nossos sistemas tecnológicos desenvolvidos para otimizar e aprimorar funcionalidades nas empresas.</p>
+            <h1
+                className={styles.titleSystem}
+                data-aos="fade-up"
+                data-aos-delay={80}
+            >Nossos Sistemas</h1>
+            <p
+                className={styles.descriptionSystem}
+                data-aos="fade-up"
+                data-aos-delay={80}
+            >Abaixo, conheça alguns dos nossos sistemas tecnológicos desenvolvidos para otimizar e aprimorar funcionalidades nas empresas.</p>
 
             <div className={styles.container}>
                 {systems.map((item, index) => (
-                    <div key={index} className={styles.card}>
+                    <div
+                        key={index}
+                        className={styles.card}
+                        data-aos="fade-up"
+                        data-aos-delay={80}
+                    >
                         <Image
                             width={300}
                             height={300}
